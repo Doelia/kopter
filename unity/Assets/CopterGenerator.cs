@@ -28,8 +28,6 @@ public class CopterGenerator : MonoBehaviour {
 	}
 
 	public void randomSwitcher(Switcher ts) {
-		Debug.Log (ts.name);
-		Debug.Log (ts.getSize());
 		ts.changeIt(Random.Range(1, ts.getSize()+1));
 	}
 
@@ -53,6 +51,10 @@ public class CopterGenerator : MonoBehaviour {
 		return getSpriteSwitcher("hands");
 	}
 
+	public SpriteSwitcher getLegs() {
+		return getSpriteSwitcher("legs");
+	}
+
 	public ColorSwitcher getColorsHands() {
 		return getColorSwitcher("hands");
 	}
@@ -69,6 +71,7 @@ public class CopterGenerator : MonoBehaviour {
 		randomSwitcher(getEyes());
 		randomSwitcher(getNose());
 		randomSwitcher(getHands());
+		randomSwitcher(getLegs());
 
 		setColorsHands();
 	}

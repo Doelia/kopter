@@ -6,6 +6,7 @@ public class ColorSwitcher : Switcher {
 	public Color[] colors;
 	
 	override public void changeIt(int id) {
+		this.id = id;
 		Color sp = colors[id-1];
 		setColor (sp);
 	}
