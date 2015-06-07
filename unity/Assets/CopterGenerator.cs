@@ -3,11 +3,21 @@ using System.Collections;
 
 public class CopterGenerator : MonoBehaviour {
 
+	private Transform parts;
+
+	public void Start() {
+		foreach (Transform child in transform) {
+			if (child.name.Equals("parts")) {
+				parts = child;
+			}
+		}
+	}
+
 	public SpriteSwitcher getSpriteSwitcher(string name) {
 		if (this.name.Equals (name))
 			return this.GetComponent<SpriteSwitcher>();
 
-		foreach (Transform child in transform) {
+		foreach (Transform child in parts.transform) {
 			if (child.name.Equals(name)) {
 				return child.GetComponent<SpriteSwitcher>();
 			}
@@ -19,7 +29,7 @@ public class CopterGenerator : MonoBehaviour {
 		if (this.name.Equals (name))
 			return this.GetComponent<ColorSwitcher>();
 		
-		foreach (Transform child in transform) {
+		foreach (Transform child in parts.transform) {
 			if (child.name.Equals(name)) {
 				return child.GetComponent<ColorSwitcher>();
 			}
