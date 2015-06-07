@@ -4,6 +4,7 @@ using System.Collections;
 public class CopterGenerator : MonoBehaviour {
 
 	private Entity copter;
+	public Entity parent;
 
 	public void Start() {
 		this.copter = this.gameObject.GetComponent<Entity>();
@@ -15,7 +16,7 @@ public class CopterGenerator : MonoBehaviour {
 
 	public void disableHandIfNeedle() {
 		if (copter.getFlyer().id <= 5) {
-			copter.getHands().changeIt(1);
+		//	copter.getHands().changeIt(1);
 		}
 	}
 
@@ -35,13 +36,36 @@ public class CopterGenerator : MonoBehaviour {
 			copter.GetComponent<Copter>().setColorsHands();
 		}
 
+		if (copter.GetComponent<Egg>() != null) {
+			copter.GetComponent<Egg>().setColorNoed();
+		}
+
 	}
 
-	public string getKey() {
-		string ab = "";
-		ab += copter.getBody().id + "-";
-		ab += copter.getColorBody().id + "-";
-		return ab;
+	public void generateFromKey(string key) {
+		string[] tab = key.Split('-');
+		copter.getBody().changeIt(int.Parse(tab[0]));
+		copter.getColorBody().changeIt(int.Parse(tab[1]));
+		copter.getEyes().changeIt(int.Parse(tab[2]));
+		copter.getNose().changeIt(int.Parse(tab[3]));
+		copter.getSkin().changeIt(int.Parse(tab[4]));
+		copter.getFlyer().changeIt(int.Parse(tab[5]));
+
+		if (copter.GetComponent<Copter>() != null) {
+			copter.GetComponent<Copter>().setColorsHands();
+		}
+		
+		if (copter.GetComponent<Egg>() != null) {
+			copter.GetComponent<Egg>().setColorNoed();
+		}
 	}
+
+	public void generateFromParent() {
+		string key = parent.getKey();
+		Debug.Log ("key = "+key);
+		this.generateFromKey(key);
+	}
+
+
 
 }

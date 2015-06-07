@@ -34,6 +34,17 @@ abstract public class Entity : MonoBehaviour {
 		return null;
 	}
 
+	public string getKey() {
+		string ab = "";
+		Entity copter = this;
+		ab += copter.getBody().id + "-";
+		ab += copter.getColorBody().id + "-";
+		ab += copter.getEyes().id + "-";
+		ab += copter.getNose().id + "-";
+		ab += copter.getSkin().id + "-";
+		ab += copter.getFlyer().id + "-";
+		return ab;
+	}
 
 
 }

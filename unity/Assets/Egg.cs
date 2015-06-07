@@ -35,4 +35,9 @@ public class Egg : Entity {
 		return getPart("motif").GetComponent<ColorSwitcher>();
 	}
 
+	public void setColorNoed() {
+		Color c = getPart("bandeau").GetComponent<SpriteRenderer>().color;
+		getPart("noeud").GetComponent<SpriteRenderer>().color = c;
+	}
+
 }
