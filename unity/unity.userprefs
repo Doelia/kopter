@@ -1,12 +1,6 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/SpriteSwitcher.cs">
-    <Files>
-      <File FileName="Assets/Switcher.cs" Line="7" Column="32" />
-      <File FileName="Assets/CopterGenerator.cs" Line="18" Column="42" />
-      <File FileName="Assets/SpriteSwitcher.cs" Line="14" Column="25" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

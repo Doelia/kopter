@@ -55,12 +55,20 @@ public class CopterGenerator : MonoBehaviour {
 		return getSpriteSwitcher("legs");
 	}
 
+	public SpriteSwitcher getSkin() {
+		return getSpriteSwitcher("skin");
+	}
+
 	public ColorSwitcher getColorsHands() {
 		return getColorSwitcher("hands");
 	}
 
 	public void setColorsHands() {
 		Color c = getColorBody().GetComponent<SpriteRenderer>().color;
+		float nR = c.r-0.1f; if (nR > 1) nR = 1f;
+		float nG = c.g-0.1f; if (nG > 1) nG = 1f;
+		float nB = c.b-0.1f; if (nB > 1) nB = 1f;
+		c = new Color(nR,nG,nB);
 		getColorsHands().setColor(c);
 	}
 
@@ -72,6 +80,7 @@ public class CopterGenerator : MonoBehaviour {
 		randomSwitcher(getNose());
 		randomSwitcher(getHands());
 		randomSwitcher(getLegs());
+		randomSwitcher(getSkin());
 
 		setColorsHands();
 	}
