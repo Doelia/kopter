@@ -28,6 +28,7 @@ public class CopterGenerator : MonoBehaviour {
 		copter.getColorsHands().setColor(c);
 	}
 
+
 	public void RandomIt() {
 		randomSwitcher(copter.getBody());
 		randomSwitcher(copter.getColorBody());
@@ -40,6 +41,13 @@ public class CopterGenerator : MonoBehaviour {
 
 		this.disableHandIfNeedle();
 		this.setColorsHands();
+	}
+
+	public string getKey() {
+		string ab = "";
+		ab += copter.getBody().id + "-";
+		ab += copter.getColorBody().id + "-";
+		return ab;
 	}
 
 }

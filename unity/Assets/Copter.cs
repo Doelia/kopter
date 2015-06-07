@@ -13,7 +13,7 @@ public class Copter : MonoBehaviour {
 		}
 	}
 
-	public GameObject getPart(string name) {
+	private GameObject getPart(string name) {
 		if (this.name.Equals (name))
 			return this.gameObject;
 		
