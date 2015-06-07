@@ -27,7 +27,7 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: 47
   maxTextureSize: 256
   textureSettings:
     filterMode: 2
@@ -46,12 +46,8 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
-  textureType: 8
-  buildTargetSettings:
-  - buildTarget: Android
-    maxTextureSize: 512
-    textureFormat: -2
-    compressionQuality: 50
+  textureType: 5
+  buildTargetSettings: []
   spriteSheet:
     sprites: []
   spritePackingTag: 
