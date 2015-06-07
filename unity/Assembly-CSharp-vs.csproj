@@ -49,7 +49,9 @@
      <Compile Include="Assets\ColorSwitcher.cs" />
      <Compile Include="Assets\Copter.cs" />
      <Compile Include="Assets\CopterGenerator.cs" />
+     <Compile Include="Assets\Egg.cs" />
      <Compile Include="Assets\EnableOnLoad.cs" />
+     <Compile Include="Assets\Entity.cs" />
      <Compile Include="Assets\ObjectSwitcher.cs" />
      <Compile Include="Assets\SpriteSwitcher.cs" />
      <Compile Include="Assets\Switcher.cs" />
