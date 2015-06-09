@@ -42,6 +42,10 @@ public class CopterGenerator : MonoBehaviour {
 
 	}
 
+	public void RandomKey() {
+
+	}
+
 	public void generateFromKey(string key) {
 		string[] tab = key.Split('-');
 		copter.getBody().changeIt(int.Parse(tab[0]));
