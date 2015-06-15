@@ -1,15 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CopterGenerator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/Copters/ColorSwitcher.cs">
     <Files>
-      <File FileName="Assets/ColorSwitcher.cs" Line="19" Column="49" />
-      <File FileName="Assets/CopterGenerator.cs" Line="60" Column="4" />
-      <File FileName="Assets/Switcher.cs" Line="1" Column="1" />
-      <File FileName="Assets/ObjectSwitcher.cs" Line="21" Column="38" />
-      <File FileName="Assets/Copter.cs" Line="49" Column="3" />
-      <File FileName="Assets/Egg.cs" Line="39" Column="31" />
-      <File FileName="Assets/Entity.cs" Line="39" Column="24" />
-      <File FileName="Assets/SpriteSwitcher.cs" Line="11" Column="63" />
+      <File FileName="Assets/scripts/Copters/SpriteSwitcher.cs" Line="21" Column="1" />
+      <File FileName="Assets/scripts/Copters/ColorSwitcher.cs" Line="23" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

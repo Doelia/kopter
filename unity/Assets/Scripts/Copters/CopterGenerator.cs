@@ -70,6 +70,21 @@ public class CopterGenerator : MonoBehaviour {
 		this.generateFromKey(key);
 	}
 
+	public void generateFromElementSet(ElementSet set) {
+		for (PartEnum p in PartEnum.getAll()) {
+			copter.getPart(p).changeIt(set.getRandomElementForPart(p));
+		}
+	}
+
+	/**
+	 * Probabilité de transformation à faire en dehors
+	 */
+	public void doGeneticMutation() {
+		PartEnum partChanged = PartEnum.randomtIt();
+		Switcher s = copter.getPart(partChanged);
+		this.randomSwitcher(s);
+	}
+
 
 
 }

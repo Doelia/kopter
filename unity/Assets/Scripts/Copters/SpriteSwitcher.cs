@@ -7,7 +7,7 @@ public class SpriteSwitcher : Switcher {
 	
 	override public void changeIt(int id) {
 		this.id = id;
-		if (id > this.getSize()-1) {
+		if (id > this.getSize()) {
 			Debug.LogWarning (this.name+": "+id+" >= "+this.getSize());
 		}
 		Sprite sp = sprites[id-1];

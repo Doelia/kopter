@@ -46,5 +46,37 @@ abstract public class Entity : MonoBehaviour {
 		return ab;
 	}
 
+	public Array<Element> getElements() {
+		Array<Element> tab;
+		tab.add(copter.getBody());
+		tab.add(copter.getColorBody());
+		tab.add(copter.getEyes());
+		tab.add(copter.getNose());
+		tab.add(copter.getSkin());
+		tab.add(copter.getFlyer());
+		return tab;
+	}
+
+	public Switcher getSwitcher(EnumPart part) {
+		switch(part) {
+			case BODY:
+				return copter.getBody();
+			case BODY_COLOR:
+				return copter.getColorBody();
+			case EYES:
+				return copter.getEyes();
+			case NOSE:
+				return copter.getEyes();
+			case HANDS:
+				return copter.getHands();
+			case LEGS:
+				return copter.getLegs();
+			case SKIN:
+				return copter.getSkin();
+			case FLYER:
+				return copter.getFlyer();
+		}
+		return null;
+	}
 
 }
