@@ -49,9 +49,13 @@
      <Compile Include="Assets\Scripts\Copters\ColorSwitcher.cs" />
      <Compile Include="Assets\Scripts\Copters\Copter.cs" />
      <Compile Include="Assets\Scripts\Copters\CopterGenerator.cs" />
+     <Compile Include="Assets\Scripts\Copters\CopterOnScreen.cs" />
      <Compile Include="Assets\Scripts\Copters\Egg.cs" />
+     <Compile Include="Assets\Scripts\Copters\Element.cs" />
+     <Compile Include="Assets\Scripts\Copters\ElementSet.cs" />
      <Compile Include="Assets\Scripts\Copters\Entity.cs" />
      <Compile Include="Assets\Scripts\Copters\ObjectSwitcher.cs" />
+     <Compile Include="Assets\Scripts\Copters\PartEnum.cs" />
      <Compile Include="Assets\Scripts\Copters\SpriteSwitcher.cs" />
      <Compile Include="Assets\Scripts\Copters\Switcher.cs" />
      <Compile Include="Assets\Scripts\EnableOnLoad.cs" />

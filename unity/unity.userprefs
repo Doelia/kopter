@@ -1,9 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/Copters/ColorSwitcher.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../Heliko/unity/project/Assets/MiniGames/Champi/LevelsData/Hey.txt">
     <Files>
-      <File FileName="Assets/scripts/Copters/SpriteSwitcher.cs" Line="21" Column="1" />
-      <File FileName="Assets/scripts/Copters/ColorSwitcher.cs" Line="23" Column="1" />
+      <File FileName="../../Heliko/unity/project/Assets/Menus/MiniGamesMenu/backMiniGames.cs" Line="1" Column="1" />
+      <File FileName="../../Heliko/unity/project/Assets/Menus/MiniGamesMenu/ButtonPlayAccueil.cs" Line="1" Column="1" />
+      <File FileName="../../Heliko/unity/project/Assets/Menus/MiniGamesMenu/ButtonRemoveAds.cs" Line="1" Column="1" />
+      <File FileName="../../Heliko/unity/project/Assets/Menus/MiniGamesMenu/EtoilesMenuMiniGames.cs" Line="1" Column="1" />
+      <File FileName="../../Heliko/unity/project/Assets/Menus/EnableIfDevMode.cs" Line="1" Column="1" />
+      <File FileName="../../Heliko/unity/project/Assets/MiniGames/Champi/LevelsData/champi.txt" Line="1" Column="1" />
+      <File FileName="../../Heliko/unity/project/Assets/MiniGames/Champi/LevelsData/TIck.txt" Line="1" Column="1" />
+      <File FileName="../../Heliko/unity/project/Assets/MiniGames/Champi/LevelsData/Hey.txt" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
